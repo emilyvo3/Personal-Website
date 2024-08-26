@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <video id="backgroundVideo" autoplay muted loop class="background-video">
+        <source src="2kpro.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+    <div id="mute-button-container">
+        <img id="sound-button" src="mute.png" alt="Mute/Unmute" style="cursor: pointer;">
+    </div>
+
+
+    <div class="container">
+        <div class="rectangle-1">
+            <h1 class="emily-vo">Emily Vo</h1>
+            <div class="icons">
+                <img src="email.png" class="social-button email" onclick="clickEmail()" style="cursor: pointer;">
+                <img src="linkedIn.png" class="social-button linkedin" onclick="clickLinked()" style="cursor: pointer;">
+                <img src="github.png" class="social-button github" onclick="clickGithub()" style="cursor: pointer;">
+                <img src="insta.png" class="social-button instagram" onclick="clickInsta()" style="cursor: pointer;">
+            </div>
+        </div>
+        <div class="content-container">
+            <div class="rectangle-2">
+                <h1 class="introduction">Hi, I'm Emily!</h1>
+            </div>
+
+
+            <div id="button-container">
+                <button id="aboutButton" class="button about" onclick="clickAbout()" style="cursor: pointer;">About Me</button>
+                <button id="resumeButton" class="button resume" onclick="clickResume()" style="cursor: pointer;">Resume</button>
+                <button id="portButton" class="button portfolio" onclick="clickPort()" style="cursor: pointer;">Portfolio</button>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+
+</body>
+
+</html>

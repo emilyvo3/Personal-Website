@@ -1,0 +1,261 @@
+/* Homepage */
+body {
+    width: 100%;
+    /* Full width of the viewport */
+    padding: 0;
+    /* Add padding */
+    background: #FFFFFF;
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Rectangle 1 */
+.rectangle-1 {
+    box-sizing: border-box;
+    display: flex;
+    /* Use inline-flex for proper alignment */
+    justify-content: center;
+    /* Center text horizontally */
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    left: 0%;
+    top: 0%;
+    background: #020819;
+    opacity: 0.9;
+}
+
+/* Container for Rectangle 2 and Buttons */
+.content-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    /* Adjust as needed */
+}
+
+/* Rectangle 2 */
+.rectangle-2 {
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 724px;
+    height: auto;
+    min-height: 364px;
+    margin-top: 200px;
+
+    background: #020819;
+    border: 2px solid #B7A5A5;
+    border-radius: 24.96px;
+    opacity: 0.9;
+    padding: 20px;
+    /* Add some padding */
+}
+
+/* Hi, I'm Emily! */
+.introduction {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: auto;
+    width: 100%;
+    height: auto;
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 132px;
+    text-align: center;
+    color: #B7A5A5;
+}
+
+/* Emily Vo */
+h1.emily-vo {
+
+    position: absolute;
+    box-sizing: border-box;
+    display: inline-flex;
+    /* Use inline-flex for proper alignment */
+    justify-content: center;
+
+
+    margin: 0 auto;
+    width: 151px;
+    height: 46px;
+    left: 50px;
+    top: 17px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 46px;
+
+    color: #B7A5A5;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* Allows items to wrap on smaller screens */
+}
+
+/* Button Styles */
+.button {
+    box-sizing: border-box;
+    display: inline-flex;
+    /* Use inline-flex for proper alignment */
+    justify-content: center;
+    /* Center text horizontally */
+    align-items: center;
+    /* Center text vertically */
+    width: 308.72px;
+    /* Set the width of the button */
+    height: 64.91px;
+    /* Set the height of the button */
+    background: #020819;
+    border: 2px solid #B7A5A5;
+    border-radius: 24.9635px;
+    white-space: nowrap;
+    /* Prevent text wrapping */
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 29.9562px;
+    /* Set font size */
+    line-height: 40px;
+    /* Set line height */
+    color: #B7A5A5;
+
+    /* Allows buttons to grow and shrink */
+    margin: 10px;
+    /* Add some space between buttons */
+    opacity: 0.9;
+}
+
+.button-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+
+}
+
+/* Button Positions */
+.about {
+
+    left: 210px;
+    margin-top: 75px;
+}
+
+.resume {
+
+    left: 630px;
+
+}
+
+.portfolio {
+
+    left: 1050px;
+
+}
+
+/* Links Bar */
+.links-bar {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    left: 0px;
+    top: 75px;
+    background: #B7A5A5;
+    border-radius: 6.66597px;
+}
+
+/* Social Media Buttons */
+.social-button {
+    position: absolute;
+    width: 48.26px;
+    height: 48.26px;
+}
+
+.instagram {
+
+    right: 50px;
+    top: 16px;
+    background: url(insta);
+}
+
+.linkedin {
+    right: 130px;
+    top: 16px;
+    background: url(linkedIn);
+}
+
+.email {
+    right: 210px;
+    top: 16px;
+    background: url(email);
+}
+
+.github {
+    right: 290px;
+    top: 16px;
+    background: url(github);
+}
+
+@media (max-width: 768px) {
+    .introduction {
+        font-size: 50px;
+        /* Smaller font size on smaller screens */
+    }
+
+    .button {
+        width: 80%;
+        /* Full width on smaller screens */
+    }
+
+    .button-container {
+        flex-direction: column;
+        align-items: stretch;
+    }
+}
+
+.background-video {
+    position: fixed;
+    /* Keeps it fixed in the background */
+    top: 0;
+    left: 0;
+    width: 100%;
+    /* Full width */
+    height: 100%;
+    /* Full height */
+    object-fit: cover;
+    /* Ensures the video covers the area without distortion */
+    z-index: -1;
+    /* Places the video behind other content */
+}
+
+#sound-button {
+    position: absolute;
+    top: 90px;
+    /* Adjust as needed */
+    left: 30px;
+    /* Adjust as needed */
+    cursor: pointer;
+    /* Change the cursor on hover */
+    width: 50px;
+    /* Set desired width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
