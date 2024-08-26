@@ -1,0 +1,165 @@
+body {
+    width: 100%;
+    /* Full width of the viewport */
+    padding: 0;
+    /* Add padding */
+    background: #FFFFFF;
+    margin: 0;
+    /* Remove default margin */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.headingBar {
+    width: 245px;
+    height: 2px;
+    background: #B7A5A5;
+    border-radius: 6.66597px;
+    margin-top: -20px;
+    margin-bottom: 15px;
+
+    background: #B7A5A5;
+    border-radius: 6.66597px;
+}
+
+
+.rectangle-1 {
+    box-sizing: border-box;
+    display: flex;
+    /* Use inline-flex for proper alignment */
+    justify-content: center;
+    /* Center text horizontally */
+    align-items: center;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 75px;
+    left: 0%;
+    top: 0%;
+    background: #020819;
+    opacity: 0.9;
+    z-index: 1;
+}
+
+h1.emily-vo {
+
+    position: absolute;
+    box-sizing: border-box;
+    display: inline-flex;
+    /* Use inline-flex for proper alignment */
+    justify-content: center;
+
+
+    margin: 0 auto;
+    width: 151px;
+    height: 46px;
+    left: 50px;
+    top: 17px;
+
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 35px;
+    line-height: 46px;
+
+    color: #B7A5A5;
+}
+
+.rectangle-1 .icons {
+    display: flex;
+    gap: 20px;
+    /* Space between icons */
+    position: absolute;
+    right: 50px;
+}
+
+/* Rectangle 2 */
+.rectangle-2 {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 auto;
+    width: 900px;
+    min-height: 1000px;
+    background: #020819;
+    padding: 20px;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    /* Adjust based on header height */
+    border: 2px solid #B7A5A5;
+    border-radius: 24px;
+    opacity: 0.9;
+}
+
+/* Resume */
+.resume {
+    font-family: 'Roboto Slab';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 50px;
+    line-height: 66px;
+    text-align: center;
+    color: #B7A5A5;
+    margin: 20px 0;
+}
+
+
+/* Links Bar */
+.links-bar {
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    top: 75px;
+    background: #B7A5A5;
+    border-radius: 6.66597px;
+}
+
+/* Social Media Buttons */
+.social-button {
+    width: 48.26px;
+    height: 48.26px;
+    cursor: pointer;
+}
+
+.background-video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.icons {
+    display: flex;
+    gap: 20px;
+}
+
+#sound-button {
+    position: absolute;
+    top: 90px;
+    /* Adjust as needed */
+    left: 30px;
+    /* Adjust as needed */
+    cursor: pointer;
+    /* Change the cursor on hover */
+    width: 50px;
+    /* Set desired width */
+    height: auto;
+    /* Maintain aspect ratio */
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .resume {
+        font-size: 30px;
+        line-height: 40px;
+    }
+
+    .rectangle-2 {
+        width: 90%;
+    }
+}
