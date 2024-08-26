@@ -19,7 +19,7 @@ function clickLinked() {
 }
 
 function clickGithub() {
-    window.open("https://github.com/emilyvo715", "_blank");
+    window.open("https://github.com/emilyvo3", "_blank");
 }
 
 function clickInsta() {
